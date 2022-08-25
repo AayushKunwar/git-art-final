@@ -5,7 +5,7 @@ import datetime
 
 output_file = open('commit_arts.txt',"a")
 
-f = open('pattern/cat.json')
+f = open('pattern/octocat.json')
 
 data = json.load(f)
 # make sure the start date is correct
@@ -37,7 +37,7 @@ print("total commits " + str(len(output_dates)))
 commit_time = []
 
 # not make it in correct time format
-start_date = datetime.datetime(year=2022, month=1, day=23)
+start_date = datetime.datetime(year=2022, month=8, day=21)
 for time in output_dates:
     temp = start_date + time
     temp = temp.strftime("%a %b %d %H:%M:%S %Y %z" +"+0545")
